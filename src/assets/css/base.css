@@ -1,0 +1,92 @@
+@import url(./onrmalize.css);
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+h2,
+h1,
+h3,
+h4,
+h5 {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+
+/*把所以标签都清领*/
+
+em,
+i {
+    font-style: normal
+}
+
+
+/*em，i 倾斜的主体不倾斜*/
+
+li {
+    list-style: none
+}
+
+
+/*清除li的小圆点*/
+
+img {
+    border: 0;
+    /*清除图片底册图片空白缝隙*/
+    vertical-align: middle
+}
+
+input {
+    outline-style: none;
+    border: none;
+}
+
+button {
+    cursor: pointer
+}
+
+
+/*鼠标经过button按钮 变成小手*/
+
+a {
+    color: #666;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    /*css3 让文字抗锯齿性 让文字更清晰*/
+    background-color: #f2f3f3;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+.hide,
+.none {
+    display: none
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
